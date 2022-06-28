@@ -29,6 +29,10 @@ async function extract() {
     } catch (e) {
         console.log(e);
     }
+    if(profileDetails.message == "Not Found"){
+        alert("Enter Valid Username");
+        return;
+    }
 
     document.getElementById('image').setAttribute('src', profileDetails.avatar_url);
     document.getElementById('link').setAttribute('href', profileDetails.html_url);
