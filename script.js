@@ -33,7 +33,7 @@ async function extract() {
     document.getElementById('image').setAttribute('src', profileDetails.avatar_url);
     document.getElementById('link').setAttribute('href', profileDetails.html_url);
     document.getElementById('name').innerText = profileDetails.name;
-    document.getElementById('username').innerText = profileDetails.login + "(username)";
+    document.getElementById('username').innerText = profileDetails.login + " (username)";
     document.getElementById('followers').innerText = "followers" + ": " + profileDetails.followers;
     document.getElementById('following').innerText = "following" + ": " + profileDetails.following;
     document.getElementById('hidden_display').style.display = 'flex';
